@@ -4,6 +4,10 @@ Currently a thin wrapper around the MailChimp API.
 
 Will eventually be expanded to integrate into Rails in many awesome ways.
 
+## Installation
+
+`gem install chimp_mailer`
+
 ## Example
 
 In your environment.rb:
