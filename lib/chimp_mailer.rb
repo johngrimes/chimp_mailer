@@ -29,9 +29,9 @@ class MailChimp
 
     raw_response = RestClient.get("#{@@url}?#{options.to_query}", :accept => :json)
 
-    response = ActiveSupport::JSON.decode(raw_response) if response.class == String
+    response = raw_response.class == String ? ActiveSupport::JSON.decode(raw_response) : raw_response
     if response.class == Array
-      response.each { |x| x.symbolize_keys }
+      response.each { |x| x.symbolize_keys! }
     elsif response.class == Hash
       response.symbolize_keys!
       raise MailChimpError, "(#{response[:code] ? response[:code] : 'no code'}) #{response[:error]}" if response[:error]
