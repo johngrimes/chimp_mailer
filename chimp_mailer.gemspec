@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "chimp_mailer"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.author = "Small Spark"
   s.email = "contact@smallspark.com.au"
   s.homepage = "http://github.com/smallspark/chimp_mailer"
