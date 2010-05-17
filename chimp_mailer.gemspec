@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
     'README.markdown',
     'lib/chimp_mailer.rb',
     'spec/spec.opts',
-    'spec/spec_helper.rb'
+    'spec/spec_helper.rb',
     'spec/chimp_mailer_spec.rb']
-  s.test_files = ['spec/spec_helper.rb'
+  s.test_files = ['spec/spec_helper.rb',
     'spec/chimp_mailer_spec.rb']
   s.require_path = "lib"
   s.add_dependency('weary', '>= 0.7.2')
